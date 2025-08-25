@@ -9,4 +9,4 @@ router.post('/upload', auth, upload.single('file'), uploadFile);
 router.get('/download/:id', downloadFile);
 router.get('/my-files', auth, getUserFiles);
 
-module.exports = router;
+export default router;

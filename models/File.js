@@ -35,4 +35,4 @@ const fileSchema = new mongoose.Schema({
 
 fileSchema.index({ expiryTime: 1 }, { expireAfterSeconds: 0 });
 
-module.exports = mongoose.model('File', fileSchema);
+export default mongoose.model('File', fileSchema);
